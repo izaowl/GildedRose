@@ -19,7 +19,9 @@ class Shop {
             this.items[i].quality = this.items[i].quality - 1;
           }
           if (this.items[i].name == 'Conjured Mana Cake')
-          this.items[i].quality = this.items[i].quality - 2;
+            this.items[i].quality = this.items[i].quality - 2;
+            console.log(this.items[i].quality);
+            
         }
       } else {
         if (this.items[i].quality < 50) {
@@ -70,7 +72,7 @@ class Shop {
   }
 
   const items = [
-    new Item("+5 Dexterity Vest", 10, 20),
+    //new Item("+5 Dexterity Vest", 10, 20),
     // new Item("Aged Brie", 2, 0),
     // new Item("Elixir of the Mongoose", 5, 7),
     // new Item("Sulfuras, Hand of Ragnaros", 0, 80),
@@ -80,7 +82,7 @@ class Shop {
     // new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
   
     // This Conjured item does not work properly yet
-    //new Item("Conjured Mana Cake", 3, 6),
+    new Item("Conjured Mana Cake", 3, 6),
   ];
   
   const days = Number(process.argv[2]) || 2                                  ;
